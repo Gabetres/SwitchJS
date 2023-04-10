@@ -1,48 +1,29 @@
-function escolhaSigno() {
+function escolhaGames() {
     var texto;
-    var signo = document.querySelector("#signos").value;
+    var game = document.querySelector("#game").value;
 
-    switch (signo) {
-        case "Áries":
-            texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes"
+    switch (game) {
+        case "Hollow Knight":
+            texto = "<img src='https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg?t=1667006028' alt='Imagem do jogo Hollow Knight'><br>Forje seu caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis. Explore cavernas serpenteantes, lute contra criaturas malignas e alie-se a insetos bizarros num estilo clássico 2D desenhado à mão.";
             break;
-        case "Touro":
-            texto = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!"
+        case "Rain World":
+            texto = "<img src='https://cdn.cloudflare.steamstatic.com/steam/apps/312520/header.jpg?t=1674137018' alt='Imagem do jogo Rain World'><br>Você é um lesgato, um predador e presa ao mesmo tempo em um ecossistema imperfeito. Pegue sua lança e enfrente os resíduos industriais, caçando comida o suficiente para sobreviver, mas tenha cuidado: outras criaturas maiores têm o mesmo plano... e os lesgatos parecem deliciosos.";
             break;
-        case "Gêmeos":
-            texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles."
+        case "The Binding of Isaac":
+            texto = "<img src='https://cdn.cloudflare.steamstatic.com/steam/apps/250900/header.jpg?t=1617174663' alt='Imagem do jogo nomedojogo'><br>The Binding of Isaac: Rebirth é um RPG de ação gerado aleatoriamente com elementos pesados ​​do tipo Rogue. Seguindo Isaac em sua jornada, os jogadores encontrarão tesouros bizarros que mudam a forma de Isaac, dando a ele habilidades super-humanas e permitindo que ele lute contra multidões de criaturas misteriosas, descubra segredos";
             break;
-        case "Câncer":
-            texto = "Sentimentais, mas ao mesmo tempo tão rancorosos, os cancerianos, assim como os outros dois signos do elemento água (Peixes e Escorpião), colocam o lado emocional em primeiro lugar."
-            break;
-        case "Leão":
-            texto = "Os leoninos são pessoas extremamente vaidosas e sempre muito agitadas. É bem fácil de saber, afinal, não tinha como serem diferentes, já que são regidos pelo Sol, o centro de tudo."
-            break;
-        case "Virgem":
-            texto = "Esses virginianos, organizados, perfeccionistas, mas,também gostam de ser os donos da razão. Ainda mais se o assunto for de algo que eles sabem bastante."
-            break;
-        case "Libra":
-            texto = "Os librianos são pessoas passivas e acabam ficando em cima do muro para evitar problemas, por isso se tornam indecisos. Além disso, os nativos de Libra apreciam a vaidade e a elegância. A influência do planeta Vênus é inevitável."
-            break;
-        case "Escorpião":
-            texto = "Os escorpianos estão sempre prontos para o ataque, caso sejam atingidos. Desconfiados e enigmáticos, gostam de estar no controle de tudo. Não vamos esquecer que são ciumentos, demais!"
-            break;
-        case "Sagitário":
-            texto = "esse signo raramente está triste com a vida e não gosta de ficar remoendo coisas do passado. O fato de serem pessoas que prezam a liberdade, em todos os sentidos, os transformam em seres melhores, por se libertarem facilmente de cargas negativas."
-            break;
-        case "Capricórnio":
-            texto = "Está para nascer pessoas mais racionais do que eles. Procuram evitar conflitos, mas também se irritam facilmente em algumas ocasiões. Lembrando do ponto fraco deles: o dinheiro."
-            break;
-        case "Aquário":
-            texto = "Prontos para defender seus direitos e participar de manifestações. O signo de Aquário gosta de mostrar para que veio à terra. Além disso, são totalmente desapegados com as pessoas."
-            break;
-        case "Peixes":
-            texto = "Sentimentais, companheiros, passivos, entre outros ''jeitinhos'' únicos que só os piscianos têm."
+        case "Phasmophobia":
+            texto = "<img src='https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg?t=1674232976' alt='Imagem do jogo nomedojogo'><br>Phasmophobia é um jogo de terror psicológico cooperativo online para 4 jogadores. A atividade paranormal está em ascensão e cabe a você e sua equipe usar todo o equipamento de caça fantasma à sua disposição para reunir o máximo de evidências possível.";
             break;
         default:
-            texto = "insira um signo existente"
+            texto = "Escolha um jogo"
     }
 
     document.querySelector("#frase").innerHTML = texto
+    document.querySelector(".resposta").style.display = "inline";
 
 }
+
+/* case "nomedojogo":
+    texto = "<img src='' alt='Imagem do jogo nomedojogo'><br>texto";
+    break; */

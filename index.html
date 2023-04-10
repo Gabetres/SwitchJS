@@ -6,28 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha Caso</title>
+    <title>Recomendações de jogos independentes</title>
 </head>
 
 <body>
-    <h1>Horóscopo</h1>
-    <label for="signos">Escolha um signo:</label>
-    <input list="signos-sugestoes" id="signos" name="signos">
-    <datalist id="signos-sugestoes">
-        <option value="Áries">
-        <option value="Touro">
-        <option value="Gêmeos">
-        <option value="Câncer">
-        <option value="Leão">
-        <option value="Virgem">
-        <option value="Libra">
-        <option value="Escorpião">
-        <option value="Sagitário">
-        <option value="Capricórnio">
-        <option value="Aquário">
-        <option value="Peixes">
-    </datalist>
-    <button onclick="escolhaSigno()">Select</button>
+    <div class="busca">
+        <h1>Recomendações de Jogos independentes</h1>
+        <label for="games">Escolha um Game</label>
+        <input list="games-sugestoes" id="game" name="Games">
+        <datalist id="games-sugestoes">
+            <option value="Hollow Knight">
+            <option value="Rain World">
+            <option value="The Binding of Isaac">
+            <option value="Phasmophobia">
+        </datalist>
+        <button onclick="escolhaGames()">Select</button>
+    </div>
+    <img src="#" alt="">
     <div id="frase"></div>
 
 
