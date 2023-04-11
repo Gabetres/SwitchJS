@@ -20,7 +20,8 @@ function escolhaGames() {
     }
 
     document.querySelector("#frase").innerHTML = texto
-    document.querySelector(".resposta").style.display = "inline";
+    document.querySelector("#escolha").style.display = "none";
+    
 
 }
 
